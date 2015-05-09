@@ -1,43 +1,43 @@
 body {
-   font-family: 'Questrial', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 #header-image {
-   height: inherit;
-   max-height: 1%;
-   vertical-align: middle;
+  height: inherit;
+  max-height: 1%;
+  vertical-align: middle;
 }
 .navbar-brand {
-   font-family: 'Hind', sans-serif;
-   background: #1F1E1D;
-   color: #FFFFFF;
+  font-family: 'Hind', sans-serif;
+  background: #1f1e1d;
+  color: #fff;
 }
 header h1 {
-   background: #1F1E1D;
-   color: #FFFFFF;
+  background: #1f1e1d;
+  color: #fff;
 }
 h2 {
-   color: #111;
+  color: #111;
 }
 .secondary {
-   background: #2E2D2C;
-   color: #FFFFFF;
+  background: #2e2d2c;
+  color: #fff;
 }
 #notification {
-   background: red;
-   color: white;
+  background: red;
+  color: white;
 }
 .row {
-   clear: both;
+  clear: both;
 }
 .row:after {
-   clear: both;
-   content: " ";
-   display: table;
+  clear: both;
+  content: " ";
+  display: table;
 }
 .col {
-   float: left;
-   background: #3D3C3B;
-   padding: 0.5%;
-   margin: 0.1%;
-   width: 32.1%;
+  float: left;
+  background: #3d3c3b;
+  padding: .5%;
+  margin: .1%;
+  width: 32.1%;
 }
