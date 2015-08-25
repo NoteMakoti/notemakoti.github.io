@@ -1,43 +1,47 @@
 body {
-  font-family: 'Questrial', sans-serif;
+    background-color: #888;
 }
-#header-image {
-  height: inherit;
-  max-height: 1%;
-  vertical-align: middle;
+
+#container {
+    height: 100%;
 }
-.navbar-brand {
-  font-family: 'Hind', sans-serif;
-  background: #1f1e1d;
-  color: #fff;
+
+@media (max-width: 979px) {
+    body {
+        padding-top: 0px;
+    }
 }
-header h1 {
-  background: #1f1e1d;
-  color: #fff;
+
+#footer {
+    padding: 0px;
+    margin: 0px;
+    background-color: #1f1e1d;
+    opacity: 0.99;
+    filter: alpha(opacity=99);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #FFF;
 }
-h2 {
-  color: #111;
+
+.page-content div {
+    font-family: 'Questrial', sans-serif;
+    padding: 0px;
+    margin: 30px;
+    width: 100%;
 }
-.secondary {
-  background: #2e2d2c;
-  color: #fff;
+
+.navbar-static-top {
+    padding: 0px;
+    margin: 0px;
+    offset: 0px;
 }
-#notification {
-  background: red;
-  color: white;
+
+.navbar-wrapper {
+    font-family: 'Hind', sans-serif;
+    background: #1f1e1d;
 }
-.row {
-  clear: both;
-}
-.row:after {
-  clear: both;
-  content: " ";
-  display: table;
-}
-.col {
-  float: left;
-  background: #3d3c3b;
-  padding: .5%;
-  margin: .1%;
-  width: 32.1%;
+
+.site-footer {
+    vertical-align: bottom;
 }

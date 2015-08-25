@@ -1,84 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: cover
+---
+<div class="home">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
-  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="manifest.json">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="mstile-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-
-  <title>Note Makoti</title>
-
-  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/cover.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
-
-  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-</head>
-
-<body>
-
-  <video autoplay loop cover poster="img/neetcover.jpg" id="bgv">
-    <source src="img/beard.webm" type="video/webm">
-  </video>
-
-  <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-      <div class="cover-container">
-        <div class="masthead clearfix">
-          <div class="inner">
-            <h3 class="masthead-brand">Note Makoti</h3>
-
-            <ul class="nav masthead-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="projects/index.html">Projects</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="inner cover">
-          <h1 class="cover-heading">Updated 6/1/2015</h1>
-
-          <p class="lead">
-            *NEW* Added placeholders for About and Contacts pages. Added basic changelog page.
-          </p>
-
-          <p class="lead"><a class="btn btn-lg btn-info" href="changelog.html">*Changelog</a></p>
-        </div>
-
-        <div class="mastfoot">
-          <div class="inner">
-
-            <p>© 2015 S. M.</p>
-            <p> Static background art by <a href="http://www.pixiv.net/member.php?id=52292">阪元ケンゴ</a> | Moving background by <a href="http://www.reddit.com/r/Cinemagraphs/comments/12988g/beardgif/">/u/clarkclark</a> .</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-</body>
-
-</html>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
