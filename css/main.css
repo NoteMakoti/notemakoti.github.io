@@ -16,8 +16,6 @@ body {
     padding: 10px;
     margin: 0px;
     background-color: #1f1e1d;
-    opacity: 0.99;
-    filter: alpha(opacity=99);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -31,8 +29,17 @@ body {
     width: 100%;
 }
 
+.post-content,
+.post-header {
+    margin: 10px;
+}
+
 .nav {
     font-family: 'Hind', sans-serif;
+}
+
+.navbar-brand {
+    color: #FFF;
 }
 
 .navbar-static-top {
