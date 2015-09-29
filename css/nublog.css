@@ -1,0 +1,25 @@
+a {
+	color:#666;
+}
+
+body {
+    background: #333;
+}
+
+.blog-description {
+    color: #555;
+}
+
+.blog-masthead {
+    background-color: #222;
+}
+
+.blog-title {
+    color: #666;
+}
+
+.sidebar-module {
+    border-radius: 0px;
+    background-color:#555;
+    color:#888;
+}

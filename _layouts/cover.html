@@ -1,166 +1,73 @@
 <!DOCTYPE html>
-<html>
-{% include head.html %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="{{ " /css/font-awesome.min.css " | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ " /css/bootstrap.min.css " | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ " /css/cover.css " | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}" />
+</head>
 
 <body>
-    <style type="text/css">
-    a,
-    a:focus,
-    a:hover,
-    a:visited {
-        color: #FFF;
-    }
-    
-    .btn-default,
-    .btn-default:hover,
-    .btn-default:focus {
-        color: #333;
-        text-shadow: none;
-        background-color: #fff;
-        border: 1px solid #fff;
-    }
-    
-    html,
-    body {
-        height: 100%;
-        color: #fff;
-        text-align: left;
-        text-shadow: 0 1px 5px rgba(0, 0, 0, .5);
-    }
-    
-    .site-wrapper {
-        display: table;
-        width: 100%;
-        height: 100%;
-        min-height: 100%;
-        -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
-        box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
-    }
-    
-    .site-wrapper-inner {
-        display: table-cell;
-        vertical-align: top;
-    }
-    
-    .cover-container {
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .inner {
-        padding: 30px;
-    }
-    
-    .masthead-brand {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .masthead-nav > li {
-        display: inline-block;
-    }
-    
-    .masthead-nav > li + li {
-        margin-left: 20px;
-    }
-    
-    .masthead-nav > li > a {
-        padding-right: 0;
-        padding-left: 0;
-        font-size: 16px;
-        font-weight: bold;
-        color: #fff;
-        color: rgba(255, 255, 255, .75);
-        border-bottom: 2px solid transparent;
-    }
-    
-    .masthead-nav > li > a:hover,
-    .masthead-nav > li > a:focus {
-        background-color: transparent;
-        border-bottom-color: rgba(255, 255, 255, .25);
-    }
-    
-    .masthead-nav > .active > a,
-    .masthead-nav > .active > a:hover,
-    .masthead-nav > .active > a:focus {
-        color: #fff;
-        border-bottom-color: #fff;
-    }
-    
-    @media (min-width: 768px) {
-        .masthead-brand {
-            float: left;
-        }
-        .masthead-nav {
-            float: right;
-        }
-    }
-    
-    .cover {
-        padding: 0 20px;
-    }
-    
-    .cover .btn-lg {
-        padding: 10px 20px;
-        font-weight: bold;
-    }
-    
-    .mastfoot {
-        color: #999;
-        color: rgba(255, 255, 255, .5);
-    }
-    
-    @media (min-width: 768px) {
-        .masthead {
-            position: fixed;
-            top: 0;
-        }
-        .mastfoot {
-            position: fixed;
-            bottom: 0;
-        }
-        .site-wrapper-inner {
-            vertical-align: middle;
-        }
-        .masthead,
-        .mastfoot,
-        .cover-container {
-            width: 100%;
-        }
-    }
-    
-    @media (min-width: 992px) {
-        .masthead,
-        .mastfoot,
-        .cover-container {
-            width: 700px;
-        }
-    }
-    
-    video#bgv {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        background: url(img/neetcover.jpg) no-repeat;
-        background-size: cover;
-    }
-    </style>
-    <video autoplay loop cover poster="img/neetcover.jpg" id="bgv">
-        <source src="img/beard.webm" type="video/webm">
-    </video>
-    {% include header.html %}
-    <div class="page-content">
-        <div class="wrapper">
-            {{ content }}
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">{{ site.title }}</h3>
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li class="active"><a href="/index.html" class="">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="resume.html">Resume</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="inner cover">
+                    <h1 class="cover-heading">Cover your page.</h1>
+                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                    <p class="lead">
+                        <a href="#" class="btn btn-lg btn-default">Learn more</a>
+                    </p>
+                </div>
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    {% include footer.html %}
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
-<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+
 </html>

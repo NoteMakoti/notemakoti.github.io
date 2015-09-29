@@ -1,42 +1,45 @@
-<footer class="container text-center" id="footer">
+<footer class="container text-center topbot" id="footer">
     <div class="wrapper">
         <div class="footer-col-wrapper">
-            <div class="col-lg-2">
-            </div>
-            <div class="col-lg-3 text-left">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-5 text-left">
                 <ul class="contact-list">
                     <li>
                         <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
                     </li>
                     <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
                 </ul>
-            <ul class="social-media-list">
-                {% if site.github_username %}
-                <li>
-                    <a href="https://github.com/{{ site.github_username }}">
-                        <i class="fa fa-github"></i>
-                        <span class="username">{{ site.github_username }}</span>
-                    </a>
-                </li>
-                {% endif %} {% if site.twitter_username %}
-                <li>
-                    <a href="https://twitter.com/{{ site.twitter_username }}">
-                        <i class="fa fa-twitter"></i>
-                        <span class="username">{{ site.twitter_username }}</span>
-                    </a>
-                </li>
-                {% endif %}
-            </ul>
+                <ul class="social-media-list">
+                    {% if site.github_username %}
+                    <li>
+                        <a href="https://github.com/{{ site.github_username }}">
+                            <i class="fa fa-github"></i>
+                            <span class="username">{{ site.github_username }}</span>
+                        </a>
+                    </li>
+                    {% endif %} {% if site.twitter_username %}
+                    <li>
+                        <a href="https://twitter.com/{{ site.twitter_username }}">
+                            <i class="fa fa-twitter"></i>
+                            <span class="username">{{ site.twitter_username }}</span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
             </div>
-            <div class="col-lg-3 text-right">
+            <div class="col-xs-5 text-right">
                 <p class="text">{{ site.description }}</p>
             </div>
-            <div class="col-lg-2">
-            </div>
+            <div class="col-xs-1"></div>
         </div>
         <div class="footer-col-wrapper">
-            <div class="col-md-12">
-                <p>Static background art by <a href="http://www.pixiv.net/member.php?id=52292">阪元ケンゴ</a> | Moving background by <a href="http://www.reddit.com/r/Cinemagraphs/comments/12988g/beardgif/">/u/clarkclark</a></div>
+            <div class="col-xs-12">
+                <p>Static background art by <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=28865167">ArseniXC and VVCephei</a> | Moving background by <a href="https://www.reddit.com/r/Cinemagraphs/comments/3kpho8/rain_in_tokyo/">/u/Comely and Masashi Wakui</a>
+            </div>
         </div>
     </div>
 </footer>
+</body>
+
+<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.js"></script>

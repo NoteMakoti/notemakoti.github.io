@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Update"
+title:  "Update - 06/01/2015"
 date:   2015-06-01 13:26:43
 categories: update
 ---
-*NEW* Added placeholders for About and Contacts pages. Added basic changelog page. 
+*NEW* Added placeholders for About and Contact pages.

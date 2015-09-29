@@ -1,74 +1,80 @@
-body {
-    background-color: #888;
-}
-
-#container {
-    height: 100%;
-}
-
-@media (max-width: 979px) {
-    body {
-        padding-top: 0px;
+        body {
+        background-color: #888;
     }
-}
-
-#footer {
-    padding: 10px;
-    margin: 0px;
-    background-color: #1f1e1d;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: #FFF;
-}
-
-.page-content div {
-    font-family: 'Questrial', sans-serif;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-}
-
-.post-content,
-.post-header {
-    margin: 10px;
-}
-
-.nav {
-    font-family: 'Hind', sans-serif;
-}
-
-.navbar-brand {
-    color: #FFF;
-}
-
-.navbar-static-top {
-    padding: 0px;
-    margin: 0px;
-    offset: 0px;
-}
-
-.navbar-wrapper {
-    background: #1f1e1d;
-}
-
-.site-footer {
-    vertical-align: bottom;
-}
-
-#bgv {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    left: 0px;
-    top: 0px;
-    z-index: -1000;
-    overflow: hidden;
-    min-height: 100%;
-    min-width: 100%;
-    - if fit to width position: absolute;
-    bottom: 0;
-    left: 0;
-}
+    
+    #container {
+        height: 100%;
+    }
+    
+    @media (max-width: 979px) {
+        body {
+            padding-top: 0px;
+        }
+    }
+    
+    #footer {
+        padding: 10px;
+        margin: 0px;
+        bottom: 0;
+        width: 100%;
+        color: #FFF;
+        font-family: 'Hind', sans-serif;
+    }
+    
+    .page-content {
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .page-content div {
+        font-family: 'Questrial', sans-serif;
+        padding: 0px;
+    }
+    
+    .post-content,
+    .post-header {
+        margin: 10px;
+    }
+    
+    .post-list {
+        margin: 0;
+    }
+    
+    .nav {
+        font-family: 'Hind', sans-serif;
+    }
+    
+    .navbar {
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+    
+    .navbar-brand {
+        color: #FFF;
+    }
+    
+    .navbar-wrapper {
+        background: #1f1e1d;
+    }
+    
+    .topbot {
+        background-color: #141415;
+    }
+    
+    video#bgv {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        background: url(img/workstation.jpg) no-repeat;
+        background-color: transparent;
+        background-attachment: scroll;
+        background-position: 0% 0%;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: cover;

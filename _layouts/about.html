@@ -1,0 +1,83 @@
+{% include head.html %}
+<style type="text/css">
+#intro {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+}
+h1, h2{
+	font-family: 'Hind', sans-serif;
+}
+h3, h4{
+	font-family: 'Questrial', sans-serif;
+}
+
+h1.headline{
+	position: relative;
+    Up: 20px;
+}
+#home {
+    background: url(img/messyroomblur.jpg) 50% 0 fixed;
+    background-size: cover;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 200px 0;
+}
+
+.home-dark {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#about {
+    background: url(img/footer_lodyas.png) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+    color: #fff;
+}
+
+#footer {
+    position: bottom;
+}
+</style>
+</head>
+{% include header.html %}
+<!-- Section 1 -->
+<section id="intro" data-speed="6" data-type="background">
+    <div class="container">
+        <div class="text-right headline">
+            <h1>I’m a Front End developer from Brooklyn, New York.</h1>
+        </div>
+        <div class="hero-unit">
+            <h3>Part gym rat, part geek; I enjoy making websites that not only look good, but feel good to use.</h3>
+            <h4>The way I see it, there are too many websites nowadays that either look like great magazine spreads (while running slowly with janky scrolling), perform very well (while looking like a 4th grader’s first PowerPoint presentation), or just don’t look special at all (due to an overreliance on pre-made templates and website “generators” like Squarespace). A web developer’s job is to help promote a client’s message, and to make the user’s experience seamless and captivating. It requires empathy, and you won’t find that with something who automates the whole process for a quick buck.</h4>
+        </div>
+    </div>
+</section>
+<!-- Section 2 -->
+<section id="home" data-speed="4" data-type="background" class="home-dark">
+    <div class="container">
+        <div>
+        	<!--Background by Jirou Tomioka (http://www.pixiv.net/member_illust.php?mode=medium&illust_id=45737862)-->
+            <h2>Want to know what my workstation is like?</h2>
+            <h4>Sometimes it’s a mechanical keyboard and a big beefy desktop with three monitors, dual-booting Windows and Debian, with Sublime Text 3 taking up half a screen, and folders, Photoshop, terminals, and test browsers taking up everything else. Sometimes it’s the laptop I’ve borrowed from the host of a party I was invited too, hurriedly pushing a content change a client requested over e-mail 5 minutes ago. Sometimes, rarely, it’s having Coda open on my iPhone and ignoring it to watch Netflix. Whatever serves.</h4>
+        </div>
+    </div>
+</section>
+<!-- Section 3 -->
+<section id="about" data-speed="2" data-type="background">
+    <div class="container">
+        <div>
+            <h2>Where do I see myself in five years?</h2>
+            <h4>As a full stack developer leading projects in an agency, working with an ambitious team that sees web development the same way I do. Also, lottery winner.</h4>
+        </div>
+    </div>
+</section>
+{% include footer.html %}
+<script type="text/javascript" src="/js/init.js"></script>
