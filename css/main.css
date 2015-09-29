@@ -19,6 +19,7 @@
         width: 100%;
         color: #FFF;
         font-family: 'Hind', sans-serif;
+        position: bottom;
     }
     
     .page-content {
