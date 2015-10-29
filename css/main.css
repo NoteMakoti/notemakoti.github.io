@@ -2,6 +2,12 @@
     background-color: #888;
 }
 
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important;
+}
+
 #container {
     height: 100%;
 }
@@ -21,8 +27,7 @@
     font-family: 'Hind', sans-serif;
 }
 
-.about-glow1 {
-}
+.about-glow1 {}
 
 .about-glow2 {
     color: #000000;
@@ -73,7 +78,7 @@
 }
 
 video#bgv {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -81,13 +86,6 @@ video#bgv {
     width: auto;
     height: auto;
     z-index: -100;
-    background: url(../img/workstation.jpg) no-repeat;
-    background-color: transparent;
-    background-attachment: scroll;
-    background-position: 0% 0%;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-size: cover;
 }
 
 #intro {
@@ -233,7 +231,7 @@ body {
     }
 }
 
-#contact{
+#contact {
     background: url(../img/sunnybeach.jpg) 50% 0 fixed;
     background-size: cover;
     height: auto;
@@ -278,21 +276,4 @@ body {
         .cover-container {
             width: 700px;
         }
-    }
-    video#bgv {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        background: url(../img/workstation.jpg) no-repeat;
-        background-color: transparent;
-        background-attachment: scroll;
-        background-position: 0% 0%;
-        background-clip: border-box;
-        background-origin: padding-box;
-        background-size: cover;
     }
