@@ -9,4 +9,4 @@ twitter_username:
 github_username: "NoteMakoti"
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown

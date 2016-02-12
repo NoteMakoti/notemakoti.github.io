@@ -103,7 +103,7 @@ video#bgv {
     height: 100vh;
     width: 100%;
     position: relative;
-    padding: 200px 0;
+    padding: 15vh 0;
 }
 
 h1,
@@ -127,6 +127,7 @@ h1.headline {
     height: 100vh;
     width: 100%;
     position: relative;
+    padding: 15vh 0;
 }
 
 .home-dark {
@@ -141,6 +142,7 @@ h1.headline {
     width: 100%;
     position: relative;
     color: #fff;
+    padding: 15vh 0;
 }
 
 #footer {
@@ -242,11 +244,11 @@ body {
 #contact {
     background: url(../img/sunnybeach.jpg) 50% 0 fixed;
     background-size: cover;
-    height: 80vh;
+    height: 95vh;
     margin: 0 auto;
     width: 100%;
     position: relative;
-    padding: 100px 0;
+    padding: 15vh 0;
     color: #1f1e1d;
 }
 
