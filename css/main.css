@@ -19,12 +19,14 @@ body {
 }
 
 #footer {
-    padding: 10px;
+    height: 8vh;
     margin: 0px;
     bottom: 0;
     width: 100%;
     color: #FFF;
     font-family: 'Hind', sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 .about-glow1 {}
@@ -40,7 +42,6 @@ body {
 
 .page-content div {
     font-family: 'Questrial', sans-serif;
-    padding: 0px;
 }
 
 .post-content,
@@ -94,6 +95,8 @@ video#bgv {
     z-index: 0;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    align-items: center;
 }
 
 #profile {
@@ -103,7 +106,7 @@ video#bgv {
     height: 100vh;
     width: 100%;
     position: relative;
-    padding: 15vh 0;
+    padding: 8vh 0;
 }
 
 h1,
@@ -127,7 +130,7 @@ h1.headline {
     height: 100vh;
     width: 100%;
     position: relative;
-    padding: 15vh 0;
+    padding: 8vh 0;
 }
 
 .home-dark {
@@ -142,11 +145,7 @@ h1.headline {
     width: 100%;
     position: relative;
     color: #fff;
-    padding: 15vh 0;
-}
-
-#footer {
-    position: bottom;
+    padding: 8vh 0;
 }
 /* TESTING TESTING*/
 
@@ -244,7 +243,7 @@ body {
 #contact {
     background: url(../img/sunnybeach.jpg) 50% 0 fixed;
     background-size: cover;
-    height: 95vh;
+    height: 92vh;
     margin: 0 auto;
     width: 100%;
     position: relative;

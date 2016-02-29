@@ -1,0 +1,31 @@
+.app {
+    height: 50vh;
+}
+
+body {
+    background: #82bec0;
+    height: 91vh;
+    margin-bottom: 9vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 9vh;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.lead {
+    font-family: 'Kalam', cursive;
+}
+
+.vertical-center{
+	display: flex;
+  	align-items: center;
+}

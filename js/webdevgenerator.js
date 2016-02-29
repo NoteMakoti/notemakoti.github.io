@@ -138,7 +138,7 @@
       skill: "CSS"
     },
     {
-      challenge: "Do the same, as the above, but only for the iPhone 6 Plus.",
+      challenge: "Collapse a navigation bar to a hamburger menu, but only for the iPhone 6 Plus.",
       skill: "CSS"
     },
     {
@@ -182,11 +182,11 @@
       skill: "Databases"
     },
     {
-      challenge: "Do the above, but with the closure table pattern.",
+      challenge: "Replicate Reddit's comment system in as much detail as possible using the closure table pattern.",
       skill: "Databases"
     },
     {
-      challenge: "Do the above, but with the nested set pattern.",
+      challenge: "Replicate Reddit's comment system in as much detail as possible using the nested set pattern.",
       skill: "Databases"
     },
     {

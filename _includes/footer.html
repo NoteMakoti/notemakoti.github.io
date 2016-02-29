@@ -2,22 +2,11 @@
     <div class="wrapper">
         <div class="footer-col-wrapper">
             <div class="col-xs-12">
-                <p>Site built with <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://getbootstrap.com/">Bootstrap</a>. Image credits can be found in the page source.</p>
+                Site built with <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://getbootstrap.com/">Bootstrap</a>. Image credits can be found in the page source.
             </div>
         </div>
     </div>
 </footer>
 <script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<script>
-faded = $("ul#faded li").fadeTo(0, 0);
-
-$(window).scroll(function(d, h) {
-    faded.each(function(i) {
-        a = $(this).offset().top + $(this).height();
-        b = $(window).scrollTop() + $(window).height();
-        if (a < b) $(this).fadeTo(500, 1);
-    });
-});
-</script>
 </body>

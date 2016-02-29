@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-    <title>Theme Template for Bootstrap</title>
-    <!-- Bootstrap core CSS -->
+    <meta name="description" content="Beginner's Angular project by Note Makoti">
+    <meta name="author" content="Note Makoti">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="/js/webdevgenerator.js"></script>
+    <link rel="icon" href="/favicon.ico">
+    <title>Random Web Development Challenge!</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <!--<link href="/css/bootstrap-theme.min.css" rel="stylesheet">--->
-    <!-- Custom styles for this template -->
-    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="/css/webdevgenerator.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Kalam:300' rel='stylesheet' type='text/css'>
 </head>
-
-<body>
-    <section ng-app="WebDevChallenge" ng-controller="randomQuote as quote">
-        <h1>Random Web Development Challenge!</h1>
-        <blockquote>
-            {{quote.info.challenge}}
-            <cite>{{quote.info.skill}}</cite>
-            <button ng-click="quote.pick()"></button>
-        </blockquote>
-    </section>
-    <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <h1>Hello, {{ yourName }}!</h1>
-    <footer>
-        Beginner's Angular project by <a href="https://github.com/NoteMakoti" class="href">Note Makoti</a>.
+<body ng-app="WebDevChallenge" ng-controller="randomQuote as quote" class="bg">
+    <nav class="navbar-inverse navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="index.html" class="active navbar-toggle">Home</a>
+                <a class="navbar-brand" href="#"><small>Random Web Dev Challenge!</small></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container app cover-container text-center">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1><button class="btn-lg btn-danger" role="button" ng-click="quote.pick()">Click for a project!</button></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h1><strong>{{quote.info.skill}}</strong></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2><p class="lead">
+                    {{quote.info.challenge}}
+                </p></h2>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Beginner's Angular project by <a href="https://github.com/NoteMakoti" class="href">Note Makoti</a>. Based on jlem's <a href="https://github.com/jlem/WebDevChallenge" class="href">WebDevChallenge project</a>.</p>
+        </div>
     </footer>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/webdevgenerator.js"></script>
 </body>
-
 </html>
