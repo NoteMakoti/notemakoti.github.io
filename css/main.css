@@ -302,3 +302,7 @@ html, body {
 .home-container{
   padding: 8vh 0;
 }
+.hidden
+{
+    display: none;
+}
