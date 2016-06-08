@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Update - Converted website to Jekyll"
-date:   2015-08-24 13:26:43
+title:  "Update - Welcome to Jekyll!"
+date:   2016-06-08 13:26:43
 categories: jekyll update
 ---
 

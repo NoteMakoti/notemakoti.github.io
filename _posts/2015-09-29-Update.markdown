@@ -1,7 +1,0 @@
----
-layout: post
-title:  "Update - 09/29/2015"
-date:   2015-09-29 18:29:21
-categories: update
----
-*NEW* Spruced up About and Contact pages. Added placeholder for gallery page.

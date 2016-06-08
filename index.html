@@ -26,12 +26,12 @@ layout: frontpage
       <div class="container light-headline col-xs-12 col-sm-6 col-md-4 col-md-offset-1">
         <div class="">
           <div>
-            <h1 class="light-headline">About Me</h1>
+            <h3 class="light-headline hideme">About Me</h3>
           </div>
         </div>
-        <div class="hero-unit">
+        <div class="hero-unit hideme">
           <p class="text-justify">
-            My name is Stanley McCatty. I am a self-taught front-end web developer with a passion for technology and design that makes life easier.
+            My name is Stanley McCatty. I'm a self-taught front-end web developer with a passion for technology and design that makes life easier.
           </p>
           <p>
             My hobbies are reading, gaming, and maintaining an obscene hoard of movies and music.
@@ -42,7 +42,8 @@ layout: frontpage
         </div>
       </div>
       <div class="profile-container light-headline col-xs-12 col-sm-6 col-md-4 col-md-offset-1">
-        <div>
+        <div class="hideme">
+          <div>
           <h3 class="light-headline">Hometown</h3>
           Brooklyn, NY
         </div>
@@ -52,13 +53,14 @@ layout: frontpage
           Sociology Major (unfinished)
         </div>
       </div>
+      </div>
     </section>
     <!-- Section 2 -->
     <!--Background by Jirou Tomioka (http://www.pixiv.net/member_illust.php?mode=medium&illust_id=45737862)-->
     <section id="home" data-speed="4" data-type="background">
 
       <div class="home-overlay home-container col-xs-12 col-sm-6 col-md-6">
-        <div class="container col-xs-12 col-sm-6">
+        <div class="container col-xs-12 col-sm-6 col-md-4 col-md-offset-1 hideme">
           <div>
             <div class="headline">
               <h2 class="light-headline">
@@ -82,7 +84,6 @@ layout: frontpage
               </div>
             </div>
             <div class="col-xs-6 col-sm-12">
-              <br>
               <div>
                 <i class="fa fa-shield"></i> AngularJS
                 <br>
@@ -101,32 +102,38 @@ layout: frontpage
               <div>
                 <i class="fa fa-paint-brush"></i> Photoshop
                 <br>
-                <i class="fa fa-video-camera"></i> Premier+ffMPEG
+                <i class="fa fa-video-camera"></i> Premier Pro
                 <br>
               </div>
             </div>
           </div>
-</div>
-</div>
+        </div>
+      </div>
+      <div class="home-container col-xs-12 col-sm-6 col-md-6">
+        <div class="container col-md-offset-1 hideme">
+          <h2>Blog</h2>
+          <ul class="posts">
+            {% for post in site.posts %}
+              <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
 </section>
 <!-- Section 3 -->
 <section id="projects" data-speed="2" data-type="background">
-<div class="container col-xs-12">
-  <div><h2 class="light-headline">Projects</h2></div>
-<div class="">
-  <h3>Web Apps</h3>
-</div>
-
+<div class="container col-xs-12 hideme">
+<div><h2 class="light-headline">Projects</h2></div>
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-  <div class="hovereffect">
-    <img class="img-responsive" src="img/web-dev-challenge.jpg" alt="">
-    <div class="overlay">
-      <h3 class="glow">Random Web Dev Challenge</h3>
-      <a class="info" href="webdevgenerator.html">Delivers unique challenges that help developers hone their skills. [AngularJS]</a>
-    </div>
+      <a href="webdevgenerator.html"><h3>Random Web Dev Challenge</h3></a>
+      Delivers unique challenges that help developers hone their skills. (Made with <strong>AngularJS</strong>.)
   </div>
-</div>
-</div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 redesign-designers-republic">
+    <a href="redesigns/thedesignersrepublic/index.html"><h3>Redesign: The Designers Republic</h3></a>
+    This legendary design studio in the UK went belly-up in 2009, leaving its website's landing page a fossil of the old web.<br>
+    <strong>[ <a href="http://www.thedesignersrepublic.com/">original</a> | <a href="redesigns/thedesignersrepublic/index.html">rebuild</a> | remake (coming soon) ]</strong>
+  </div>
+  </div>
 </section>
 <!--contact-->
 <!--Background by Jirou Tomioka (http://tomiokajiro.deviantart.com/)-->
