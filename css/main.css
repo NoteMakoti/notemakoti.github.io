@@ -17,7 +17,7 @@
   bottom: 0;
   width: 100%;
   color: #FFF;
-  font-family: 'Hind', sans-serif;
+  font-family: "Helvetica LT Std Light";
   display: flex;
   align-items: center;
 }
@@ -25,7 +25,7 @@
   text-shadow: 1px 1px 2px grey, 0 0 0.8em white;
 }
 .page-content div {
-  font-family: 'Hind', sans-serif;
+  font-family: "Helvetica LT Std";
 }
 .post-content, .post-header {
   margin: 10px;
@@ -34,7 +34,7 @@
   margin: 0;
 }
 .nav {
-  font-family: 'Hind', sans-serif;
+  font-family: "Helvetica LT Std Light";
 }
 .navbar {
   margin-bottom: 0;
@@ -81,8 +81,11 @@ video#bgv {
   position: relative;
   padding: 50px 0;
 }
+.profile-overlay{
+  background-color: rgba(255, 255, 255, 0.1);
+}
 h1, h2, h3, h4 {
-  font-family: 'Hind', sans-serif;
+  font-family: "Helvetica LT Std";
 }
 h1.headline {
   position: relative;
@@ -184,11 +187,14 @@ html, body {
 #contact {
   background: url(../img/sunnybeach.jpg) 50% 0 fixed;
   background-size: cover;
-  min-height: 92vh;
+  max-height: 86vh;
+  min-height: calc(100vh - 100px);
+  min-height: -o-calc(100vh - 100px); /* opera */
+  min-height: -webkit-calc(100vh - 100px); /* google, safari */
+  min-height: -moz-calc(100vh - 100px); /* firefox */
   margin: 0 auto;
   width: 100%;
   position: relative;
-  padding: 50px 0;
   color: #1f1e1d;
 }
 #contact > a:link{
@@ -313,4 +319,31 @@ html, body {
 .hidden
 {
     display: none;
+}
+
+@font-face {
+  font-family: "Helvetica LT Std";
+  src: url('/fonts/HelveticaLTStd-Roman.otf?#iefix') format('opentype');
+}
+@font-face {
+  font-family: "Helvetica LT Std";
+  src: url('/fonts/HelveticaLTStd-Bold.otf?#iefix') format('opentype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Helvetica LT Std Black";
+  src: url('/fonts/HelveticaLTStd-Blk.otf?#iefix') format('opentype');
+}
+@font-face {
+  font-family: "Helvetica LT Std Light";
+  src: url('/fonts/HelveticaLTStd-Light.otf?#iefix') format('opentype');
+}
+.thick-headline {
+  font-family: "Helvetica LT Std Black";
+}
+.helv-headline {
+  font-family: "Helvetica LT Std";
+}
+.light-headline {
+  font-family: "Helvetica LT Std Light";
 }
