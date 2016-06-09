@@ -75,11 +75,12 @@ video#bgv {
 #profile {
   background: url(../img/pixelcity.png) 50% 0 fixed;
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  min-height: 100vh;
+  height: auto;
   width: 100%;
-  position: relative;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 .profile-overlay{
   background-color: rgba(255, 255, 255, 0.1);
@@ -94,9 +95,18 @@ h1.headline {
 #home {
   background: url(../img/messyroomblur.jpg) 50% 0 fixed;
   background-size: cover;
-  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  position: relative;
+}
+.home-overlay1{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.home-overlay2{
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.home-container{
+  padding: 50px 0;
 }
 #home > .carousel {
   min-height: inherit;
@@ -107,11 +117,11 @@ h1.headline {
 }
 #projects {
   background: url(../img/footer_lodyas.png) 50% 0 fixed;
+  display: flex;
+  flex-wrap: wrap;
   height: auto;
   margin: 0 auto;
-  min-height: 100vh;
   width: 100%;
-  position: relative;
   color: #fff;
   padding: 50px 0;
 }
@@ -312,14 +322,6 @@ html, body {
   .hovereffect a.info:hover {
     box-shadow: 0 0 5px #fff;
   }
-
-.home-overlay{
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100vh;
-}
-.home-container{
-  padding: 50px 0;
-}
 .hidden
 {
     display: none;
