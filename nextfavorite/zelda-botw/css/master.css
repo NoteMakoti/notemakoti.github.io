@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "ITC Avant Garde Pro Bk";
+  src: url('../font/ITCAvantGardePro-Bk.otf?#iefix') format('opentype');
+}
+@font-face {
+  font-family: "ITC Avant Garde Pro Md";
+  src: url('../font/ITCAvantGardePro-Md.otf?#iefix') format('opentype');
+}
+@font-face {
+  font-family: "ITC Avant Garde Pro Bk";
+  src: url('../font/ITCAvantGardePro-Demi.otf?#iefix') format('opentype');
+  font-weight: bold;
+}
+#intro{
+  background: url(../img/E32016_background_022.jpg) 50% 0 fixed;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  align-items: center;
+}
+#thesis{
+  background: url(../img/E32016_background_087.jpg) 50% 0 fixed;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black, 0 0 0.1em grey;
+}
+#feature1{
+  background: url(../img/E32016_illustration_01-12.jpg) 50% 0 fixed;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black, 0 0 0.1em grey;
+}
+#feature2{
+  background: url(../img/E32016_background_036.jpg) 50% 0 fixed;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black, 0 0 0.1em grey;
+}
+#feature3{
+  background: url(../img/E32016_background_060.jpg) 50% 0 fixed;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black, 0 0 0.1em grey;
+}
+#feature4{
+  background: url(../img/E32016_background_043.jpg) 50% 0 fixed;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black, 0 0 0.1em grey;
+}
+#feature5{
+  background: url(../img/E32016_image04_Guardian-Link_Archer_7.jpg) 50% 0 fixed;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  align-items: flex-end;
+  color: #ffffff;
+}
+#outro{
+  background: url(../img/E32016_background_0166.jpg) 50% 0 fixed;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  min-height: calc(100vh - 50px);
+  min-height: -o-calc(100vh -500px); /* opera */
+  min-height: -webkit-calc(100vh - 50px); /* google, safari */
+  min-height: -moz-calc(100vh - 50px); /* firefox */
+  width: 100%;
+  padding: 50px 0;
+}
+footer{
+  height: 8vh;
+  max-height: 50px;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff0000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+footer > a{
+  color: #ffffff;
+}
+img, svg {
+    max-width: 100%;
+    min-width: 0;
+    width: auto;
+    outline: 0;
+}
+container {
+    max-width: 100%;
+    min-width: 0;
+    width: auto;
+    outline: 0;
+}
