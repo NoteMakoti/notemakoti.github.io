@@ -49,7 +49,7 @@
 .topbot {
   background-color: #141415;
 }
-video#bgv {
+#bgv {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -60,44 +60,45 @@ video#bgv {
   z-index: -100;
 }
 #intro {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
+  position:         relative;
+  width:            100%;
+  min-height:       100vh;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
   background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
-  z-index: 0;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
+  z-index:          0;
+  padding:          0;
+  margin:           0;
+  display:          flex;
+  align-items:      center;
 }
 #profile {
-  background: url(../img/pixelcity.png) 50% 0 fixed;
+  color: #a5c2e1;
+  background-color: #1b4b7d;
   background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  height: auto;
-  width: 100%;
-  padding: 50px 0;
+  display:         flex;
+  flex-wrap:       wrap;
+  margin:          0 auto;
+  height:          auto;
+  width:           100%;
 }
 .profile-overlay{
-  background-color: rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
 }
 h1, h2, h3, h4 {
   font-family: "Helvetica LT Std";
 }
-h1.headline {
+.headline {
   position: relative;
   Up: 20px;
 }
 #home {
-  background: url(../img/messyroomblur.jpg) 50% 0 fixed;
+  background:      url(../img/messyroomblurpurple.jpg) 50% 0 fixed;
   background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  display:         flex;
+  flex-wrap:       wrap;
+  width:           100%;
+  padding-bottom:  15px;
 }
 .home-overlay1{
   background-color: rgba(0, 0, 0, 0.7);
@@ -106,7 +107,7 @@ h1.headline {
   background-color: rgba(0, 0, 0, 0.35);
 }
 .home-container{
-  padding: 50px 0;
+  padding: 50px;
 }
 #home > .carousel {
   min-height: inherit;
@@ -116,18 +117,22 @@ h1.headline {
   height: inherit;
 }
 #projects {
-  background: url(../img/footer_lodyas.png) 50% 0 fixed;
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-  margin: 0 auto;
-  width: 100%;
-  color: #fff;
-  padding: 50px 0;
+  color:           #a5c2e1;
+  background:      url(../img/messyroomblurgrey.jpg) 50% 0 fixed;
+  background-size: cover;
+  display:         flex;
+  flex-wrap:       wrap;
+  height:          auto;
+  margin:          0 auto;
+  width:           100%;
+}
+.projects-overlay{
+  background-color: rgba(27, 75, 125, 0.8);
+  padding-bottom: 50px;
 }
 
 a, a:focus, a:hover, a:visited {
-  color: #FFF;
+  color:     #ff9966;
 }
 .btn-default, .btn-default:hover, .btn-default:focus {
   color: #333;
@@ -137,8 +142,9 @@ a, a:focus, a:hover, a:visited {
 }
 html, body {
   color: #FFF;
-  text-align: left;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+}
+ul {
+  display: inline-block;
 }
 .site-wrapper {
   display: table;
@@ -171,11 +177,10 @@ html, body {
 }
 .masthead-nav > li > a {
   padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  color: rgba(255, 255, 255, .75);
+  padding-left:  0;
+  font-size:     16px;
+  font-weight:   bold;
+  color:         rgba(255, 255, 255, .75);
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover, .masthead-nav > li > a:focus {
@@ -195,20 +200,19 @@ html, body {
   }
 }
 #contact {
-  background: url(../img/sunnybeach.jpg) 50% 0 fixed;
-  background-size: cover;
-  max-height: 86vh;
-  min-height: calc(100vh - 100px);
-  min-height: -o-calc(100vh - 100px); /* opera */
-  min-height: -webkit-calc(100vh - 100px); /* google, safari */
-  min-height: -moz-calc(100vh - 100px); /* firefox */
-  margin: 0 auto;
-  width: 100%;
-  position: relative;
-  color: #1f1e1d;
+  background-color: #316294;
+  color:            #a5c2e1;
+  margin:           0 auto;
+  width:            100%;
+  position:         relative;
+  display:          flex;
+  flex-wrap:        wrap;
 }
 #contact > a:link{
   color: #1f1e1d;
+}
+.contact-overlay{
+  margin-bottom: 20px;
 }
 .cover {
   padding: 0 20px;
@@ -233,10 +237,15 @@ html, body {
   .site-wrapper-inner {
     vertical-align: middle;
   }
-  .masthead, .mastfoot, @media (min-width: 992px) {
-    .masthead, .mastfoot, .cover-container {
-      width: 700px;
-    }
+  .skills{
+    -o-padding-start: 0;
+    -o-padding-end: 20px;
+    -moz-padding-start: 0;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 20px;
+    padding-left: 0;
+    padding-right: 20px;
   }
   #splash {
     position: absolute;
@@ -357,13 +366,14 @@ html, body {
 }
 .post-fit{
   padding-top: 50px;
-  max-height: 100vh;
-  min-height: calc(100vh - 60px);
-  min-height: -o-calc(100vh - 60px); /* opera */
-  min-height: -webkit-calc(100vh - 60px); /* google, safari */
-  min-height: -moz-calc(100vh - 60px); /* firefox */
-  margin: 0 auto;
-  width: 100%;
-  position: relative;
-  color: #000000;
+  max-height:  100vh;
+  min-height:  calc(100vh - 60px);
+  min-height:  -o-calc(100vh - 60px); /* opera */
+  min-height:  -webkit-calc(100vh - 60px); /* google, safari */
+  min-height:  -moz-calc(100vh - 60px); /* firefox */
+  margin:      0 auto;
+  width:       100%;
+  position:    relative;
+  color:       #000000;
+}
 }
