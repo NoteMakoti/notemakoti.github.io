@@ -97,7 +97,6 @@
   background: url(../img/E32016_image04_Guardian-Link_Archer_7.jpg) 50% 0 fixed;
   background-size: cover;
   display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
   height: auto;
   min-height: 100vh;
