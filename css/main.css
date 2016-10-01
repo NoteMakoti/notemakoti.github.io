@@ -17,7 +17,7 @@
   bottom: 0;
   width: 100%;
   color: #9d9d9d;
-  font-family: "Helvetica LT Std Light";
+  font-family: "Helvetica LT Std Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   display: flex;
   align-items: center;
 }
@@ -25,7 +25,7 @@
   text-shadow: 1px 1px 2px grey, 0 0 0.8em white;
 }
 .page-content div {
-  font-family: "Helvetica LT Std";
+  font-family: "Helvetica LT Std", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .post-content, .post-header {
   margin: 10px;
@@ -34,7 +34,7 @@
   margin: 0;
 }
 .nav {
-  font-family: "Helvetica LT Std Light";
+  font-family: "Helvetica LT Std Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .navbar {
   margin-bottom: 0;
@@ -86,7 +86,7 @@
   padding-bottom: 20px;
 }
 h1, h2, h3, h4 {
-  font-family: "Helvetica LT Std";
+  font-family: "Helvetica LT Std", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .headline {
   position: relative;
@@ -356,13 +356,13 @@ ul {
   src: url('/fonts/HelveticaLTStd-Light.otf?#iefix') format('opentype');
 }
 .thick-headline {
-  font-family: "Helvetica LT Std Black";
+  font-family: "Helvetica LT Std Black", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .helv-headline {
-  font-family: "Helvetica LT Std";
+  font-family: "Helvetica LT Std", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .light-headline {
-  font-family: "Helvetica LT Std Light";
+  font-family: "Helvetica LT Std Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .post-fit{
   padding-top: 50px;
