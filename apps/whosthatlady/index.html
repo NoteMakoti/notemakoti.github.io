@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Beginner's Angular project by Note Makoti">
+    <meta name="author" content="Note Makoti">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="js/whosthatlady.min.js"></script>
+    <link rel="icon" href="/favicon.ico">
+    <title>Who's That Lady?</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link href="css/master.min.css" rel="stylesheet">
+</head>
+<body ng-app="WhosThatLady" ng-controller="randomQuote as quote" class="bg" ng-click="quote.pick()">
+    <div class="app text-center">
+    		<img src="img/savage_man.svg" alt="" class="small-12 large-6 columns savage">
+        <div class="small-12 large-6 columns delivery">
+            <div>
+                <h1 class="greeting">
+                	<strong>Damn, get a load o' that</strong>
+                </h1>
+            </div>
+            <div>
+                <h1 class="nickname">
+                	{{quote.info.nickname}}
+                </h1>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+</body>
+</html>
