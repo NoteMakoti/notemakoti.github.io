@@ -73,7 +73,7 @@ body {
   color: #000000;
   min-height: 100vh;
   padding-top: 38px;
-  background: url(/img/webdesign-layout-sketching-picjumbo-com.jpg);
+  background: url(../img/webdesign-layout-sketching-picjumbo-com.jpg);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
