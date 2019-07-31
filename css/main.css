@@ -93,3 +93,7 @@ body {
 .navbar > a:focus, a:hover{
   color: #ffffff;
 }
+
+.u{
+  text-decoration: underline;
+}
