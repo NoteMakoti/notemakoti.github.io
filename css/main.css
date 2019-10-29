@@ -10,6 +10,10 @@ body {
   color: #a5c2e1;
 }
 
+.constrain{
+  max-width: 90vw;
+}
+
 #contact {
   background-color: #316294;
   font-size: .9rem;
@@ -67,6 +71,12 @@ body {
 
 .project {
   padding-bottom: 20px;
+  padding-left: 0;
+}
+
+.hideme
+{
+  opacity:0;
 }
 
 #intro{
@@ -100,6 +110,6 @@ body {
 }
 
 .u{
-  font-family: "avant garde", "Century Gothic", "Avant Garde Gothic", Helvetica, Arial, sans-serif;
+  font-family: "Avant Garde", "Century Gothic", "Avant Garde Gothic", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
